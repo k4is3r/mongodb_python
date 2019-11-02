@@ -33,5 +33,11 @@ collection = db["test"]
 #    print("Score: "+str(result["score"]))
 
 # Find only one documet in the DB
-results = collection.find_one({"_id":0})
-print(results)
+#results = collection.find_one({"_id":0})
+#print(results)
+
+# All documents  in the DB
+results = collection.find({})
+
+for result in results:
+    print(result)
