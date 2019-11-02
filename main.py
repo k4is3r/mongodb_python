@@ -58,3 +58,6 @@ collection = db["test"]
 #    {"$set":{"name":newName}}
 #    )
 
+#Count all documents in the DB
+document_count = collection.count_documents({})
+print(document_count)
