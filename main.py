@@ -37,7 +37,15 @@ collection = db["test"]
 #print(results)
 
 # All documents  in the DB
-results = collection.find({})
+#results = collection.find({})
+#for result in results:
+#    print(result)
 
-for result in results:
-    print(result)
+# Deleting one document in the DB
+#post = {
+#    "_id":3,
+#    "name":"kay",
+#    "score":8
+#    }
+#collection.insert_one(post)
+#result = collection.delete_one({"_id":3})
