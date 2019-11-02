@@ -25,9 +25,13 @@ collection = db["test"]
 #collection.insert_many([post1,post2])
 
 # Find documents in the DB
-name = input('Insert the name to find in the DB: ')
-results = collection.find({"name":name})
+#name = input('Insert the name to find in the DB: ')
+#results = collection.find({"name":name})
 
-for result in results:
-    print("Name: "+result["name"])
-    print("Score: "+str(result["score"]))
+#for result in results:
+#    print("Name: "+result["name"])
+#    print("Score: "+str(result["score"]))
+
+# Find only one documet in the DB
+results = collection.find_one({"_id":0})
+print(results)
