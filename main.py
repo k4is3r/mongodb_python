@@ -14,12 +14,20 @@ collection = db["test"]
 #collection.insert_one(post)
 
 #Insert many documents in the DB
-post1 = {
-    "name":"Hector",
-    "score":23
-}
-post2 = {
-    "name":"Euclides",
-    "score":43
-}
-collection.insert_many([post1,post2])
+#post1 = {
+#    "name":"Hector",
+#    "score":23
+#}
+#post2 = {
+#    "name":"Euclides",
+#    "score":43
+#}
+#collection.insert_many([post1,post2])
+
+# Find documents in the DB
+name = input('Insert the name to find in the DB: ')
+results = collection.find({"name":name})
+
+for result in results:
+    print("Name: "+result["name"])
+    print("Score: "+str(result["score"]))
