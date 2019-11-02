@@ -49,3 +49,12 @@ collection = db["test"]
 #    }
 #collection.insert_one(post)
 #result = collection.delete_one({"_id":3})
+
+#Update one document in the DB
+#name = input("Inster name you wanna update: ")
+#newName = input("Insert the new name for "+name+" :")
+#find = collection.update_one(
+#    {"name":name},
+#    {"$set":{"name":newName}}
+#    )
+
